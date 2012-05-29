@@ -97,7 +97,7 @@ int main(int argc, char *argv[])
     double s,m,phi,nu,acc; //Переменные для пользовательского ввода.
     double phi1,phi2; //Переменные для рассчетов.
     param terminal,terminal1,terminal2; //Переменные для работы с функцией getParam.
-    bool run; //Флаг.
+    bool run = false; //Флаг.
 
     //Собираем аргументы.
     QStringList args = a.arguments();
@@ -131,11 +131,7 @@ int main(int argc, char *argv[])
             nu = 0;
             run = true;
         }
-        else
-            run = false;
     }
-    else
-        run = false;
 
     if(run)
     {
